@@ -2,7 +2,7 @@ import requests
 import json
 
 def main():
-    url = 'http://127.0.0.1:8000'
+    url = 'https://deploy-aaur.onrender.com/'
     data={
         'x': 3,
         'y': 4
@@ -11,4 +11,5 @@ def main():
     print(res.json())
 
 if __name__ == '__main__':
+
     main()
