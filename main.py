@@ -7,11 +7,12 @@ class Data(BaseModel):
 
 app = FastAPI()
 
-@app.get('/')
-def index():
-    return {'message': 'Hello Deta!'}
+# @app.get('/')
+# def index():
+#     return {'message': 'Hello Deta!'}
 
 @app.post('/')
 def calc(data: Data):
     z = data.x*data.y
+
     return {'result': z}
